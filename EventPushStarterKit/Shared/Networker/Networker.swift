@@ -52,7 +52,6 @@ struct Networker {
     }
 }
 
-// Helper: AnyEncodable สำหรับ encode body ง่าย ๆ
 struct AnyEncodable: Encodable {
     private let _encode: (Encoder) throws -> Void
     init(_ encodable: Encodable) { self._encode = encodable.encode }
@@ -61,11 +60,6 @@ struct AnyEncodable: Encodable {
 
 // MARK: - Usage Example
 /*
-struct User: Codable {
-    let id: Int
-    let name: String
-}
-
 Task {
     let result: Result<User, NetworkError> = await Networker.request(url: "https://jsonplaceholder.typicode.com/users/1")
     switch result {
