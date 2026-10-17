@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "songkran",
+  "title": "Songkran Festival",
+  "analyticsName": "bff_songkran",
+  "state": {},
+  "body": [
+    { "type": "banner",
+      "props": { "imageUrl": "https://picsum.photos/seed/songkran/1200/800", "title": "Songkran 2027", "subtitle": "Water, music, and 30% off", "badge": "LIMITED", "height": 230 } },
+    { "type": "text", "props": { "text": "Celebrate the Thai New Year with festivals across the country. Tickets are limited.", "style": "body", "color": "secondary" } },
+    { "type": "hstack", "children": [
+      { "type": "badge", "props": { "text": "13–15 Apr", "color": "teal" } },
+      { "type": "badge", "props": { "text": "Bangkok", "color": "purple" } }
+    ] },
+    { "type": "section", "props": { "title": "Featured" }, "children": [
+      { "type": "carousel", "props": { "itemWidth": 240 }, "children": [
+        { "type": "event_card", "props": { "eventId": "3" }, "action": { "type": "deepLink", "url": "eventpush://events/3" } },
+        { "type": "event_card", "props": { "eventId": "5" }, "action": { "type": "deepLink", "url": "eventpush://events/5" } }
+      ] }
+    ] },
+    { "type": "button", "props": { "title": "See music events", "icon": "music.note", "style": "prominent", "fullWidth": true },
+      "action": { "type": "sequence", "actions": [
+        { "type": "track", "event": "bff_cta_tapped", "params": { "screen": "songkran" } },
+        { "type": "deepLink", "url": "eventpush://events?category=music" }
+      ] } }
+  ]
+}

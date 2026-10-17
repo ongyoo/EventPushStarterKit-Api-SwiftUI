@@ -119,3 +119,10 @@ fastlane/test_output
 iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,swift
+
+### Starter kit ###
+.build/
+Modules/.build/
+Modules/.swiftpm/
+DerivedData/
+*.xcresult

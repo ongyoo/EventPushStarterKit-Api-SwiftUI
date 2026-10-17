@@ -1,0 +1,6 @@
+#include "Base.xcconfig"
+
+APP_ENVIRONMENT = development
+API_BASE_URL = https:/$()/pub-f0bfae22754e4aa4a1ee891e99b27472.r2.dev/api
+// YES = bundled JSON fixtures, no network (works offline and when the API is down).
+USE_MOCK_API = YES

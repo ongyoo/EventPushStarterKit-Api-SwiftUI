@@ -1,0 +1,49 @@
+#include "Features.xcconfig"
+
+// Settings shared by every configuration.
+// Values used by Swift code reach it through Config/Info.plist -> AppEnvironment.
+// NOTE: in .xcconfig, "//" starts a comment, so URLs are written https:/$()/host
+
+// MARK: - Identity (scripts/new-project.sh rewrites these)
+APP_DISPLAY_NAME = EventPush
+PRODUCT_BUNDLE_IDENTIFIER = NathatK.EventPushStarterKit
+DEVELOPMENT_TEAM = R65DGBTB2J
+MARKETING_VERSION = 1.0
+CURRENT_PROJECT_VERSION = 1
+
+// MARK: - Deep links
+DEEP_LINK_SCHEME = eventpush
+UNIVERSAL_LINK_HOST = eventpush.app
+
+// MARK: - Security
+// Comma separated hosts to pin. Put the server certificates (.cer) in App/Resources.
+SSL_PINNED_HOSTS =
+
+// MARK: - Platform
+IPHONEOS_DEPLOYMENT_TARGET = 17.0
+TARGETED_DEVICE_FAMILY = 1,2
+SWIFT_VERSION = 6.0
+CODE_SIGN_STYLE = Automatic
+
+// MARK: - Info.plist
+INFOPLIST_FILE = Config/Info.plist
+GENERATE_INFOPLIST_FILE = YES
+INFOPLIST_KEY_CFBundleDisplayName = $(APP_DISPLAY_NAME)
+INFOPLIST_KEY_UILaunchScreen_Generation = YES
+INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES
+INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor
+
+// MARK: - Localization
+// Languages the app ships. Also shown in Settings > <App> > Language.
+APP_LANGUAGES = en th
+
+// MARK: - Swift
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited) $(FEATURE_SWIFT_CONDITIONS)
+
+// MARK: - Size & speed
+DEAD_CODE_STRIPPING = YES
+LOCALIZATION_PREFERS_STRING_CATALOGS = YES
+SWIFT_EMIT_LOC_STRINGS = YES

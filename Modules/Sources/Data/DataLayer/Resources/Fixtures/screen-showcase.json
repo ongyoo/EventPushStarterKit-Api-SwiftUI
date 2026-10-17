@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "showcase",
+  "title": "Liquid Glass · BFF",
+  "analyticsName": "bff_showcase",
+  "state": { "section": "components", "notify": true, "volume": 0.6, "query": "", "member": "Ann" },
+  "body": [
+    {
+      "type": "banner",
+      "props": {
+        "imageUrl": "https://picsum.photos/seed/event3/1200/800",
+        "title": "Hello {{member}}",
+        "subtitle": "This whole screen comes from the backend",
+        "badge": "SERVER-DRIVEN",
+        "height": 210
+      },
+      "action": { "type": "sequence", "actions": [
+        { "type": "track", "event": "bff_banner_tapped", "params": { "screen": "showcase" } },
+        { "type": "deepLink", "url": "eventpush://events/3" }
+      ] }
+    },
+    {
+      "type": "segmented",
+      "props": { "bind": "section", "options": [
+        { "title": "Components", "value": "components" },
+        { "title": "Controls", "value": "controls" },
+        { "title": "Events", "value": "events" }
+      ] }
+    },
+
+    {
+      "type": "section", "visibleIf": { "key": "section", "equals": "components" },
+      "props": { "title": "Glass components", "subtitle": "Native glass on iOS 26, LiquidGlassKit on iOS 17–18" },
+      "children": [
+        { "type": "searchField", "props": { "bind": "query", "prompt": "Search events" },
+          "action": { "type": "track", "event": "bff_search_submitted" } },
+        { "type": "text", "visibleIf": { "key": "query", "notEquals": "" },
+          "props": { "text": "Searching for “{{query}}”", "style": "footnote", "color": "secondary" } },
+        { "type": "glassGroup", "props": { "spacing": 10 }, "children": [
+          { "type": "button", "props": { "title": "Get tickets", "icon": "ticket.fill", "style": "prominent" },
+            "action": { "type": "deepLink", "url": "eventpush://events?category=music" } },
+          { "type": "button", "props": { "title": "Promo", "icon": "sparkles" },
+            "action": { "type": "screen", "id": "songkran", "presentation": "sheet" } }
+        ] },
+        { "type": "card", "props": { "cornerRadius": 26 }, "children": [
+          { "type": "hstack", "children": [
+            { "type": "icon", "props": { "systemName": "wand.and.stars", "size": 26 } },
+            { "type": "text", "props": { "text": "Cards, lists and buttons are glass", "style": "headline" } }
+          ] },
+          { "type": "text", "props": { "text": "Add a new component type in the app's registry and the backend can use it right away.", "style": "subheadline", "color": "secondary" } }
+        ] },
+        { "type": "listItem", "props": { "icon": "bell.badge.fill", "title": "Notifications", "subtitle": "Opens a tab with a deep link" },
+          "action": { "type": "deepLink", "url": "eventpush://inbox" } },
+        { "type": "listItem", "props": { "icon": "safari", "title": "Open a web page", "subtitle": "openURL action" },
+          "action": { "type": "openURL", "url": "https://developer.apple.com/design/human-interface-guidelines/materials" } }
+      ]
+    },
+
+    {
+      "type": "section", "visibleIf": { "key": "section", "equals": "controls" },
+      "props": { "title": "Glass controls", "subtitle": "Bound to screen state, no app code" },
+      "children": [
+        { "type": "card", "children": [
+          { "type": "toggle", "props": { "bind": "notify", "title": "Remind me" } },
+          { "type": "divider" },
+          { "type": "slider", "props": { "bind": "volume", "title": "Volume", "min": 0, "max": 1 } }
+        ] },
+        { "type": "text", "visibleIf": { "key": "notify", "equals": true },
+          "props": { "text": "Reminders are on", "style": "footnote", "color": "green" } },
+        { "type": "button", "props": { "title": "Toggle reminders", "icon": "arrow.triangle.2.circlepath" },
+          "action": { "type": "toggleState", "key": "notify" } }
+      ]
+    },
+
+    {
+      "type": "section", "visibleIf": { "key": "section", "equals": "events" },
+      "props": { "title": "Events", "subtitle": "event_card is registered by the app, not the library" },
+      "children": [
+        { "type": "carousel", "props": { "itemWidth": 250 }, "children": [
+          { "type": "event_card", "props": { "eventId": "1" }, "action": { "type": "deepLink", "url": "eventpush://events/1" } },
+          { "type": "event_card", "props": { "eventId": "3" }, "action": { "type": "deepLink", "url": "eventpush://events/3" } },
+          { "type": "event_card", "props": { "eventId": "5" }, "action": { "type": "deepLink", "url": "eventpush://events/5" } }
+        ] },
+        { "type": "grid", "props": { "columns": 2 }, "children": [
+          { "type": "image", "props": { "url": "https://picsum.photos/seed/event4/600/400", "height": 110, "cornerRadius": 18, "label": "Tokyo Game Show" } },
+          { "type": "image", "props": { "url": "https://picsum.photos/seed/event6/600/400", "height": 110, "cornerRadius": 18, "label": "Formula 1 Monaco" } }
+        ] }
+      ]
+    },
+
+    { "type": "futureWidget", "props": { "note": "Unknown types are skipped by older apps" } }
+  ],
+  "toolbar": [
+    { "type": "toolbarButton", "props": { "icon": "house", "title": "Home" }, "action": { "type": "deepLink", "url": "eventpush://home" } },
+    { "type": "toolbarButton", "props": { "icon": "sparkles", "title": "Promo" }, "action": { "type": "screen", "id": "songkran", "presentation": "push" } },
+    { "type": "toolbarButton", "props": { "icon": "arrow.clockwise", "title": "Reload" }, "action": { "type": "reload" } }
+  ]
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_BASE_URL</key>
+	<string>$(API_BASE_URL)</string>
+	<key>APP_ENVIRONMENT</key>
+	<string>$(APP_ENVIRONMENT)</string>
+	<key>APP_FEATURES</key>
+	<dict>
+		<key>backgroundTasks</key>
+		<string>$(FEATURE_BACKGROUND_TASKS)</string>
+		<key>liveActivities</key>
+		<string>$(FEATURE_LIVE_ACTIVITIES)</string>
+		<key>localNotifications</key>
+		<string>$(FEATURE_LOCAL_NOTIFICATIONS)</string>
+		<key>silentPush</key>
+		<string>$(FEATURE_SILENT_PUSH)</string>
+		<key>siri</key>
+		<string>$(FEATURE_SIRI)</string>
+	</dict>
+	<key>APP_LANGUAGES</key>
+	<string>$(APP_LANGUAGES)</string>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>th</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>$(DEEP_LINK_SCHEME)</string>
+			</array>
+		</dict>
+	</array>
+	<key>DEEP_LINK_SCHEME</key>
+	<string>$(DEEP_LINK_SCHEME)</string>
+	<key>SSL_PINNED_HOSTS</key>
+	<string>$(SSL_PINNED_HOSTS)</string>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIPrefersShowingLanguageSettings</key>
+	<true/>
+	<key>UNIVERSAL_LINK_HOST</key>
+	<string>$(UNIVERSAL_LINK_HOST)</string>
+	<key>USE_MOCK_API</key>
+	<string>$(USE_MOCK_API)</string>
+</dict>
+</plist>

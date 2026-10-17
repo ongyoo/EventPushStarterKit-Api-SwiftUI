@@ -1,0 +1,42 @@
+// Optional capabilities. YES = compiled in, declared in Info.plist and started
+// at launch. NO = removed: no Info.plist keys, no entitlement, no runtime code.
+//
+// After changing a value: Product > Clean Build Folder.
+
+// Local notifications (schedule, group, actions, remove).
+FEATURE_LOCAL_NOTIFICATIONS = YES
+
+// Background work with BGTaskScheduler (app refresh + processing).
+FEATURE_BACKGROUND_TASKS = YES
+
+// Silent push (content-available) + remote notification registration.
+// Needs the Push Notifications capability (aps-environment) on your App ID.
+FEATURE_SILENT_PUSH = NO
+
+// Live Activities (lock screen / Dynamic Island). Needs the Widget Extension
+// from Templates/Extensions/LiveActivity (see docs/CAPABILITIES.md).
+FEATURE_LIVE_ACTIVITIES = NO
+
+// Siri / Shortcuts / Apple Intelligence via App Intents (App/Sources/Intents).
+FEATURE_SIRI = YES
+
+// MARK: - Plumbing (no need to edit below)
+
+_SWIFT_LOCAL_NOTIFICATIONS_YES = FEATURE_LOCAL_NOTIFICATIONS
+_SWIFT_BACKGROUND_TASKS_YES = FEATURE_BACKGROUND_TASKS
+_SWIFT_SILENT_PUSH_YES = FEATURE_SILENT_PUSH
+_SWIFT_LIVE_ACTIVITIES_YES = FEATURE_LIVE_ACTIVITIES
+_SWIFT_SIRI_YES = FEATURE_SIRI
+_ENTITLEMENTS_YES = Config/Push.entitlements
+
+// Info.plist keys (UIBackgroundModes, BGTaskSchedulerPermittedIdentifiers,
+// NSSupportsLiveActivities) are added to the BUILT Info.plist by the
+// "Apply Feature Flags" build phase (scripts/apply-feature-flags.sh).
+// That script edits a build product, so script sandboxing is off for the app.
+ENABLE_USER_SCRIPT_SANDBOXING = NO
+
+// App target Swift code can use `#if FEATURE_SIRI` etc.
+FEATURE_SWIFT_CONDITIONS = $(_SWIFT_LOCAL_NOTIFICATIONS_$(FEATURE_LOCAL_NOTIFICATIONS)) $(_SWIFT_BACKGROUND_TASKS_$(FEATURE_BACKGROUND_TASKS)) $(_SWIFT_SILENT_PUSH_$(FEATURE_SILENT_PUSH)) $(_SWIFT_LIVE_ACTIVITIES_$(FEATURE_LIVE_ACTIVITIES)) $(_SWIFT_SIRI_$(FEATURE_SIRI))
+
+// Push entitlement only when silent push is on.
+CODE_SIGN_ENTITLEMENTS = $(_ENTITLEMENTS_$(FEATURE_SILENT_PUSH))

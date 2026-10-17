@@ -1,0 +1,512 @@
+[
+  {
+    "id": "1",
+    "title": "King's Cup 51st Football Championship",
+    "description": "Ticket sale 24–26 Aug. Gates open 10:00.",
+    "price_starting_at": 200,
+    "organizer_name": "FA Thailand",
+    "start_date": "2026-11-20T12:00:00Z",
+    "location": {
+      "name": "Rajamangala Stadium",
+      "city": "Bangkok",
+      "latitude": 13.755,
+      "longitude": 100.622
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event1/800/600",
+    "category": "sports",
+    "favorite_count": 9700
+  },
+  {
+    "id": "2",
+    "title": "UEFA Champions League Final",
+    "description": "The biggest club football match in Europe.",
+    "price_starting_at": 150,
+    "organizer_name": "UEFA",
+    "start_date": "2027-05-29T19:00:00Z",
+    "location": {
+      "name": "Wembley Stadium",
+      "city": "London",
+      "latitude": 51.556,
+      "longitude": -0.28
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event2/800/600",
+    "category": "sports",
+    "favorite_count": 48306
+  },
+  {
+    "id": "3",
+    "title": "Coachella Valley Music Festival",
+    "description": "World's most famous music festival.",
+    "price_starting_at": 429,
+    "organizer_name": "Goldenvoice",
+    "start_date": "2027-04-09T18:00:00Z",
+    "location": {
+      "name": "Empire Polo Club",
+      "city": "Indio",
+      "latitude": 33.681,
+      "longitude": -116.237
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event3/800/600",
+    "category": "music",
+    "favorite_count": 5700
+  },
+  {
+    "id": "4",
+    "title": "Tokyo Game Show",
+    "description": "Asia's premier gaming exhibition.",
+    "price_starting_at": 25,
+    "organizer_name": "CESA",
+    "start_date": "2027-09-23T01:00:00Z",
+    "location": {
+      "name": "Makuhari Messe",
+      "city": "Tokyo",
+      "latitude": 35.648,
+      "longitude": 140.035
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event4/800/600",
+    "category": "entertainment",
+    "favorite_count": 4640
+  },
+  {
+    "id": "5",
+    "title": "Oktoberfest München",
+    "description": "World's largest beer festival.",
+    "price_starting_at": 0,
+    "organizer_name": "City of Munich",
+    "start_date": "2027-09-18T08:00:00Z",
+    "location": {
+      "name": "Theresienwiese",
+      "city": "Munich",
+      "latitude": 48.131,
+      "longitude": 11.55
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event5/800/600",
+    "category": "community",
+    "favorite_count": 3406
+  },
+  {
+    "id": "6",
+    "title": "Formula 1 Monaco Grand Prix",
+    "description": "The most prestigious F1 race.",
+    "price_starting_at": 220,
+    "organizer_name": "Formula 1",
+    "start_date": "2027-05-23T13:00:00Z",
+    "location": {
+      "name": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "latitude": 43.734,
+      "longitude": 7.42
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event6/800/600",
+    "category": "sports",
+    "favorite_count": 5700
+  },
+  {
+    "id": "7",
+    "title": "New York Marathon",
+    "description": "Annual city marathon through all five boroughs.",
+    "price_starting_at": 120,
+    "organizer_name": "NYRR",
+    "start_date": "2026-11-01T13:00:00Z",
+    "location": {
+      "name": "Central Park",
+      "city": "New York",
+      "latitude": 40.785,
+      "longitude": -73.968
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event7/800/600",
+    "category": "sports",
+    "favorite_count": 8900
+  },
+  {
+    "id": "8",
+    "title": "CES Las Vegas",
+    "description": "World's largest tech trade show.",
+    "price_starting_at": 250,
+    "organizer_name": "CTA",
+    "start_date": "2027-01-06T17:00:00Z",
+    "location": {
+      "name": "Las Vegas Convention Center",
+      "city": "Las Vegas",
+      "latitude": 36.131,
+      "longitude": -115.156
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event8/800/600",
+    "category": "education",
+    "favorite_count": 15000
+  },
+  {
+    "id": "9",
+    "title": "Tomorrowland Winter",
+    "description": "Epic electronic music festival in the Alps.",
+    "price_starting_at": 400,
+    "organizer_name": "We Are One World",
+    "start_date": "2027-03-13T11:00:00Z",
+    "location": {
+      "name": "Alpe d'Huez",
+      "city": "France",
+      "latitude": 45.09,
+      "longitude": 6.067
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event9/800/600",
+    "category": "music",
+    "favorite_count": 22000
+  },
+  {
+    "id": "10",
+    "title": "Rio Carnival",
+    "description": "World's biggest carnival celebration.",
+    "price_starting_at": 50,
+    "organizer_name": "Rio City Council",
+    "start_date": "2027-02-05T20:00:00Z",
+    "location": {
+      "name": "Sambadrome",
+      "city": "Rio de Janeiro",
+      "latitude": -22.912,
+      "longitude": -43.23
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event10/800/600",
+    "category": "community",
+    "favorite_count": 30000
+  },
+  {
+    "id": "11",
+    "title": "Jazz Night 2027",
+    "description": "Jazz Night – an event for everyone.",
+    "price_starting_at": 15.0,
+    "organizer_name": "City Council",
+    "start_date": "2027-01-01T12:00:00Z",
+    "location": {
+      "name": "Impact Arena",
+      "city": "Bangkok",
+      "latitude": 13.91,
+      "longitude": 100.55
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event11/800/600",
+    "category": "music",
+    "favorite_count": 13037
+  },
+  {
+    "id": "12",
+    "title": "Startup Summit 2027",
+    "description": "Startup Summit – an event for everyone.",
+    "price_starting_at": 99.0,
+    "organizer_name": "EventPush Live",
+    "start_date": "2027-02-04T12:00:00Z",
+    "location": {
+      "name": "Nimman Hall",
+      "city": "Chiang Mai",
+      "latitude": 18.8,
+      "longitude": 98.97
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event12/800/600",
+    "category": "education",
+    "favorite_count": 2473
+  },
+  {
+    "id": "13",
+    "title": "Food Festival 2027",
+    "description": "Food Festival – an event for everyone.",
+    "price_starting_at": 150.0,
+    "organizer_name": "EventPush Live",
+    "start_date": "2027-03-07T12:00:00Z",
+    "location": {
+      "name": "Patong Beach",
+      "city": "Phuket",
+      "latitude": 7.89,
+      "longitude": 98.29
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event13/800/600",
+    "category": "community",
+    "favorite_count": 12082
+  },
+  {
+    "id": "14",
+    "title": "Marathon 2027",
+    "description": "Marathon – an event for everyone.",
+    "price_starting_at": 49.0,
+    "organizer_name": "EventPush Live",
+    "start_date": "2027-04-10T12:00:00Z",
+    "location": {
+      "name": "Marina Bay",
+      "city": "Singapore",
+      "latitude": 1.28,
+      "longitude": 103.86
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event14/800/600",
+    "category": "sports",
+    "favorite_count": 16727
+  },
+  {
+    "id": "15",
+    "title": "Comedy Show 2027",
+    "description": "Comedy Show – an event for everyone.",
+    "price_starting_at": 9.0,
+    "organizer_name": "EventPush Live",
+    "start_date": "2027-05-13T12:00:00Z",
+    "location": {
+      "name": "Tokyo Dome",
+      "city": "Tokyo",
+      "latitude": 35.7,
+      "longitude": 139.75
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event15/800/600",
+    "category": "entertainment",
+    "favorite_count": 2916
+  },
+  {
+    "id": "16",
+    "title": "Design Week 2027",
+    "description": "Design Week – an event for everyone.",
+    "price_starting_at": 25.0,
+    "organizer_name": "Sport Club",
+    "start_date": "2027-06-16T12:00:00Z",
+    "location": {
+      "name": "O2 Arena",
+      "city": "London",
+      "latitude": 51.5,
+      "longitude": 0.0
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event16/800/600",
+    "category": "education",
+    "favorite_count": 2389
+  },
+  {
+    "id": "17",
+    "title": "Indie Rock Live 2027",
+    "description": "Indie Rock Live – an event for everyone.",
+    "price_starting_at": 9.0,
+    "organizer_name": "EventPush Live",
+    "start_date": "2027-07-19T12:00:00Z",
+    "location": {
+      "name": "Olympia",
+      "city": "Paris",
+      "latitude": 48.87,
+      "longitude": 2.33
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event17/800/600",
+    "category": "music",
+    "favorite_count": 18156
+  },
+  {
+    "id": "18",
+    "title": "Tech Meetup 2027",
+    "description": "Tech Meetup – an event for everyone.",
+    "price_starting_at": 25.0,
+    "organizer_name": "EventPush Live",
+    "start_date": "2027-08-22T12:00:00Z",
+    "location": {
+      "name": "Hollywood Bowl",
+      "city": "Los Angeles",
+      "latitude": 34.11,
+      "longitude": -118.34
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event18/800/600",
+    "category": "education",
+    "favorite_count": 18628
+  },
+  {
+    "id": "19",
+    "title": "Art Fair 2027",
+    "description": "Art Fair – an event for everyone.",
+    "price_starting_at": 0.0,
+    "organizer_name": "City Council",
+    "start_date": "2027-09-25T12:00:00Z",
+    "location": {
+      "name": "Impact Arena",
+      "city": "Bangkok",
+      "latitude": 13.91,
+      "longitude": 100.55
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event19/800/600",
+    "category": "entertainment",
+    "favorite_count": 19203
+  },
+  {
+    "id": "20",
+    "title": "Yoga Retreat 2027",
+    "description": "Yoga Retreat – an event for everyone.",
+    "price_starting_at": 0.0,
+    "organizer_name": "Sport Club",
+    "start_date": "2027-10-01T12:00:00Z",
+    "location": {
+      "name": "Nimman Hall",
+      "city": "Chiang Mai",
+      "latitude": 18.8,
+      "longitude": 98.97
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event20/800/600",
+    "category": "community",
+    "favorite_count": 1724
+  },
+  {
+    "id": "21",
+    "title": "Film Premiere 2027",
+    "description": "Film Premiere – an event for everyone.",
+    "price_starting_at": 9.0,
+    "organizer_name": "EventPush Live",
+    "start_date": "2027-11-04T12:00:00Z",
+    "location": {
+      "name": "Patong Beach",
+      "city": "Phuket",
+      "latitude": 7.89,
+      "longitude": 98.29
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event21/800/600",
+    "category": "entertainment",
+    "favorite_count": 18340
+  },
+  {
+    "id": "22",
+    "title": "Coding Bootcamp 2027",
+    "description": "Coding Bootcamp – an event for everyone.",
+    "price_starting_at": 150.0,
+    "organizer_name": "City Council",
+    "start_date": "2027-12-07T12:00:00Z",
+    "location": {
+      "name": "Marina Bay",
+      "city": "Singapore",
+      "latitude": 1.28,
+      "longitude": 103.86
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event22/800/600",
+    "category": "education",
+    "favorite_count": 9589
+  },
+  {
+    "id": "23",
+    "title": "Wine Tasting 2027",
+    "description": "Wine Tasting – an event for everyone.",
+    "price_starting_at": 25.0,
+    "organizer_name": "City Council",
+    "start_date": "2027-01-10T12:00:00Z",
+    "location": {
+      "name": "Tokyo Dome",
+      "city": "Tokyo",
+      "latitude": 35.7,
+      "longitude": 139.75
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event23/800/600",
+    "category": "community",
+    "favorite_count": 17817
+  },
+  {
+    "id": "24",
+    "title": "Charity Run 2027",
+    "description": "Charity Run – an event for everyone.",
+    "price_starting_at": 0.0,
+    "organizer_name": "Creative Hub",
+    "start_date": "2027-02-13T12:00:00Z",
+    "location": {
+      "name": "O2 Arena",
+      "city": "London",
+      "latitude": 51.5,
+      "longitude": 0.0
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event24/800/600",
+    "category": "sports",
+    "favorite_count": 18458
+  },
+  {
+    "id": "25",
+    "title": "Anime Expo 2027",
+    "description": "Anime Expo – an event for everyone.",
+    "price_starting_at": 150.0,
+    "organizer_name": "City Council",
+    "start_date": "2027-03-16T12:00:00Z",
+    "location": {
+      "name": "Olympia",
+      "city": "Paris",
+      "latitude": 48.87,
+      "longitude": 2.33
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event25/800/600",
+    "category": "entertainment",
+    "favorite_count": 3476
+  },
+  {
+    "id": "26",
+    "title": "Photography Walk 2027",
+    "description": "Photography Walk – an event for everyone.",
+    "price_starting_at": 49.0,
+    "organizer_name": "City Council",
+    "start_date": "2027-04-19T12:00:00Z",
+    "location": {
+      "name": "Hollywood Bowl",
+      "city": "Los Angeles",
+      "latitude": 34.11,
+      "longitude": -118.34
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event26/800/600",
+    "category": "community",
+    "favorite_count": 12302
+  },
+  {
+    "id": "27",
+    "title": "Book Fair 2027",
+    "description": "Book Fair – an event for everyone.",
+    "price_starting_at": 0.0,
+    "organizer_name": "EventPush Live",
+    "start_date": "2027-05-22T12:00:00Z",
+    "location": {
+      "name": "Impact Arena",
+      "city": "Bangkok",
+      "latitude": 13.91,
+      "longitude": 100.55
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event27/800/600",
+    "category": "education",
+    "favorite_count": 18593
+  },
+  {
+    "id": "28",
+    "title": "Esports Final 2027",
+    "description": "Esports Final – an event for everyone.",
+    "price_starting_at": 0.0,
+    "organizer_name": "City Council",
+    "start_date": "2027-06-25T12:00:00Z",
+    "location": {
+      "name": "Nimman Hall",
+      "city": "Chiang Mai",
+      "latitude": 18.8,
+      "longitude": 98.97
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event28/800/600",
+    "category": "sports",
+    "favorite_count": 16366
+  },
+  {
+    "id": "29",
+    "title": "Classical Gala 2027",
+    "description": "Classical Gala – an event for everyone.",
+    "price_starting_at": 99.0,
+    "organizer_name": "Sport Club",
+    "start_date": "2027-07-01T12:00:00Z",
+    "location": {
+      "name": "Patong Beach",
+      "city": "Phuket",
+      "latitude": 7.89,
+      "longitude": 98.29
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event29/800/600",
+    "category": "music",
+    "favorite_count": 10393
+  },
+  {
+    "id": "30",
+    "title": "Street Dance Battle 2027",
+    "description": "Street Dance Battle – an event for everyone.",
+    "price_starting_at": 25.0,
+    "organizer_name": "Sport Club",
+    "start_date": "2027-08-04T12:00:00Z",
+    "location": {
+      "name": "Marina Bay",
+      "city": "Singapore",
+      "latitude": 1.28,
+      "longitude": 103.86
+    },
+    "thumbnail_url": "https://picsum.photos/seed/event30/800/600",
+    "category": "entertainment",
+    "favorite_count": 11948
+  }
+]

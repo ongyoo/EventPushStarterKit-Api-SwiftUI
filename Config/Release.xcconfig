@@ -1,0 +1,11 @@
+#include "Base.xcconfig"
+
+APP_ENVIRONMENT = production
+API_BASE_URL = https:/$()/pub-f0bfae22754e4aa4a1ee891e99b27472.r2.dev/api
+USE_MOCK_API = NO
+
+// Fast code: whole-module optimization, symbols stripped from the binary.
+SWIFT_COMPILATION_MODE = wholemodule
+SWIFT_OPTIMIZATION_LEVEL = -O
+STRIP_INSTALLED_PRODUCT = YES
+STRIP_SWIFT_SYMBOLS = YES

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>VIPER scene with a Storyboard view controller: Contract, Builder, ViewController + Storyboard, Presenter, Interactor.</string>
+	<key>Summary</key>
+	<string>VIPER scene (UIKit + Storyboard)</string>
+	<key>SortOrder</key>
+	<string>2</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+		<string>com.apple.InterfaceBuilder3.Storyboard.XIB</string>
+	</array>
+	<key>DefaultCompletionName</key>
+	<string>Scene</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>sceneName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Scene name:</string>
+			<key>Description</key>
+			<string>PascalCase, without suffix. Example: Profile, EventDetail</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>moduleName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Module (package target):</string>
+			<key>Description</key>
+			<string>Swift module that owns the view controller (Features unless you split a module out).</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>Features</string>
+		</dict>
+	</array>
+</dict>
+</plist>
